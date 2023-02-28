@@ -96,11 +96,12 @@ let cityForm = document.querySelector("#search-form");
 cityForm.addEventListener("submit", searchCity);
 
 // 🙀Bonus Feature
-// Display a fake temperature (i.e 17) in Celsius and add a link to convert it to Fahrenheit. When clicking on it, it should convert the temperature to Fahrenheit. When clicking on Celsius, it should convert it back to Celsius.
+
 function toFahrenheit(event) {
   let temperatureChange = document.querySelector("#temperature");
-  temperatureChange.innerHTML =
-    Math.round(temperatureChange.innerHTML * 9) / 5 + 32;
+  temperatureChange.innerHTML = Math.round(
+    (temperatureChange.innerHTML * 9) / 5 + 32
+  );
 }
 
 function toCelcius(event) {
