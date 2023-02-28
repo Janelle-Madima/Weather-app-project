@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App--</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+      integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="search"
+          class="weather_search"
+          placeholder="Type your City"
+          autofocus
+          autocomplete="off"
+          id="city-input"
+        />
+        <input type="submit" value="Search" class="btn btn-primary shadow-sm" />
+        <input
+          type="button"
+          value="GPS"
+          class="current-location"
+          id="current-button"
+        />
+      </form>
+      <h1 id="city">Johannesburg</h1>
+      <h4>Last Updated: <span id="date"></span></h4>
+      <h4 id="description">clear sky</h4>
+
+      <div class="float-left">
+        <img
+        src=http://shecodes-assets.s3.amazonaws.com/api/weather/icons/${forecastDay.condition.icon}.png
+        alt="clear sky" id="icon" /><strong id="temperature">19</strong
+        ><span class="units"
+          ><a href="#" id="celsius-link">°C</a>.<a href="#" id="fahrenheit-link"
+            >°F</a
+          ></span
+        >
+      </div>
+
+      <ul>
+        <li>Wind: <span id="wind"></span> km/h</li>
+      </ul>
+      <ul>
+        <li>Humidity: <span id="humidity"></span>%</li>
+      </ul>
+
+      <hr />
+
+      <div class="weather-forecast" id="forecast">
+        <div class="row">
+          <div class="col">
+            <div class="weather-forecast-date">Thu</div>
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/clear-sky-night.png"
+              alt=""
+              width="42"
+            />
+            <div class="weather-forecast-temperatures">
+              <span class="weather-forecast-temp-max"> 18°</span>
+              <span class="weather-forecast-temp-min"> 12°</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="source">
+        Coded by Jane Madima. Open-source code in
+        <a href="https://github.com/Janelle-Madima/Weather-App">GitHub</a>
+      </p>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

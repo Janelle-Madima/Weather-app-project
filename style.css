@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap");
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-image: url("images.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: solid;
+  min-height: 120px;
+  margin: 30px auto;
+  max-width: 650px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0.6)
+  );
+}
+
+form {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding: 50px 15px 15px;
+}
+form input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 16px 0px 16px 0px;
+
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-in-out;
+}
+.units a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.units {
+  color: rgb(9, 9, 9);
+  margin: auto;
+  position: relative;
+  font-size: 24px;
+  top: -35px;
+}
+.float-left {
+  font-size: 64px;
+  line-height: 2;
+  font-weight: 400;
+  color: antiquewhite;
+  text-align: center;
+}
+.weather-forecast-temperatures {
+  font-size: 13px;
+  color: whitesmoke;
+  border-radius: 44px;
+  text-align: center;
+}
+.weather-forecast-temp-min {
+  opacity: 0.5;
+}
+
+.weather-forecast-date {
+  font-size: 16px;
+  color: whitesmoke;
+  font-size: 16px;
+  opacity: 0.5;
+  text-align: center;
+  margin-top: 5px;
+}
+ul {
+  text-align: left;
+  font-weight: lighter;
+  color: white;
+}
+.weather-forecast {
+  font-size: 20px;
+  color: whitesmoke;
+  margin-top: 5px;
+  text-align: center;
+}
+p {
+  text-align: left;
+  color: whitesmoke;
+  font-size: small;
+}
+h1 {
+  color: antiquewhite;
+  text-align: center;
+  margin: auto;
+}
+
+h4 {
+  color: antiquewhite;
+  text-align: center;
+  margin: auto;
+}
+hr {
+  color: whitesmoke;
+}
+.btn {
+  width: 100%;
+  max-width: 120px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px 0px 16px 0px;
+
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+  box-shadow: rgba(255, 255, 255, 0.3);
+  margin-left: 20%;
+}
+.btn :hover {
+  cursor: pointer;
+}
+.current-location {
+  width: 100%;
+  max-width: 100px;
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 16px 0px 16px 0px;
+  font-size: 20px;
+  font-weight: 300;
+  transition: 0.2s ease-out;
+  box-shadow: rgba(255, 255, 255, 0.3);
+  margin-left: 1%;
+  color: white;
+}
+.current-location :hover {
+  cursor: pointer;
+}
+.source {
+  text-align: center;
+}
+img {
+  padding: 0%;
+  margin: auto;
+  max-width: 60px;
+}
