@@ -169,11 +169,3 @@ img {
     padding-bottom: 14px;
   }
 }
-@media only screen and (min-device-width: 768px) and (max-device-width: 1280px) {
-  h1,
-  h4 {
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 1%;
-  }
-}
