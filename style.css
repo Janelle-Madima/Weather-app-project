@@ -12,13 +12,14 @@ body {
   border: solid;
   min-height: 120px;
   margin: 30px auto;
-  max-width: 650px;
+  max-width: 50%;
 }
 
 .container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh;
+
+  max-width: initial;
   background-image: linear-gradient(
     to bottom,
     rgba(0, 0, 0, 0.3),
@@ -157,6 +158,10 @@ img {
 }
 
 @media (max-width: 600px) {
+  .container {
+    min-height: 100vh;
+    max-width: 100%;
+  }
   form {
     margin-top: auto;
     margin-bottom: auto;
